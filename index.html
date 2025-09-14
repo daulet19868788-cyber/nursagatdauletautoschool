@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DriveSmart Academy</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+    body {background:#f9f9f9; color:#333;}
+    header {
+      background:#1a73e8;
+      color:#fff;
+      padding:20px 40px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:1000;
+    }
+    header h1 {font-size:24px;}
+    nav a {
+      color:#fff;
+      margin-left:20px;
+      text-decoration:none;
+      font-weight:bold;
+    }
+    nav a:hover {text-decoration:underline;}
+
+    .hero {
+      background:linear-gradient(to right, #1a73e8, #4dabf7);
+      color:#fff;
+      text-align:center;
+      padding:100px 20px;
+    }
+    .hero h2 {font-size:48px; margin-bottom:20px;}
+    .hero p {font-size:20px; margin-bottom:30px;}
+    .btn {
+      background:#fff;
+      color:#1a73e8;
+      padding:12px 25px;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+    .btn:hover {background:#e6e6e6;}
+
+    section {padding:60px 40px;}
+    h3 {text-align:center; font-size:32px; margin-bottom:40px; color:#1a73e8;}
+
+    /* Pricing */
+    .pricing-table {
+      max-width:900px;
+      margin:0 auto;
+      border-collapse:collapse;
+      width:100%;
+      background:#fff;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+    .pricing-table th, .pricing-table td {
+      border:1px solid #ddd;
+      padding:15px;
+      text-align:center;
+    }
+    .pricing-table th {background:#f1f1f1;}
+    .pricing-table tr:hover {background:#f9f9f9;}
+
+    /* Testimonials */
+    .testimonials {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:20px;
+    }
+    .testimonial {
+      background:#fff;
+      padding:20px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+    .testimonial p {font-style:italic; margin-bottom:15px;}
+    .testimonial h4 {color:#1a73e8;}
+
+    /* Contact */
+    form {
+      max-width:600px;
+      margin:0 auto;
+      background:#fff;
+      padding:30px;
+      border-radius:10px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width:100%;
+      padding:12px;
+      margin:10px 0;
+      border:1px solid #ccc;
+      border-radius:6px;
+    }
+    form button {
+      background:#1a73e8;
+      color:#fff;
+      border:none;
+      padding:12px 20px;
+      border-radius:6px;
+      cursor:pointer;
+      font-weight:bold;
+    }
+    form button:hover {background:#1558b0;}
+
+    footer {
+      background:#1a73e8;
+      color:#fff;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>DriveSmart Academy</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Learn to Drive with Confidence</h2>
+  <p>Professional instructors, modern vehicles, and flexible schedules.</p>
+  <a href="#pricing" class="btn">View Pricing</a>
+</section>
+
+<section id="pricing">
+  <h3>Our Pricing</h3>
+  <table class="pricing-table">
+    <tr>
+      <th>Package</th>
+      <th>Includes</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Beginner</td>
+      <td>10 lessons, basic driving skills</td>
+      <td>$299</td>
+    </tr>
+    <tr>
+      <td>Intermediate</td>
+      <td>15 lessons, city driving & parking</td>
+      <td>$449</td>
+    </tr>
+    <tr>
+      <td>Advanced</td>
+      <td>20 lessons, highway & night driving</td>
+      <td>$599</td>
+    </tr>
+  </table>
+</section>
+
+<section id="testimonials">
+  <h3>What Our Students Say</h3>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>"The instructors are very patient and professional. I passed my test on the first try!"</p>
+      <h4>- Emily R.</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Flexible schedules made it easy to learn even with my busy job. Highly recommended."</p>
+      <h4>- John D.</h4>
+    </div>
+    <div class="testimonial">
+      <p>"Great experience! The cars are modern and safe, and I felt confident behind the wheel."</p>
+      <h4>- Sarah K.</h4>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h3>Contact Us</h3>
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 DriveSmart Academy. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
